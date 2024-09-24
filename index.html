@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Profile Viewer</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Include SweetAlert2 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>GitHub Profile Viewer</h1>
+    <input type="text" id="username" placeholder="Enter GitHub username" />
+    <button id="search-button">Search</button>
+
+    <!-- Profile Information Section -->
+    <div class="profile" id="profile" style="display:none;">
+      <img id="avatar" src="" alt="Profile Picture" />
+      <h2 id="name"></h2>
+      <p><strong><span id="repo-count"></span> Repos</strong></p>
+      <p><strong>Followers:</strong> <span id="follower-count"></span></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
